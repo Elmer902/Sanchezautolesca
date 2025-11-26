@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+     body { background: linear-gradient(180deg,#081718,#041212); color:#e6fff5; }
+    .card { background: rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.05); backdrop-filter: blur(6px); }
+    .pill { background: linear-gradient(90deg,#0f9d58,#046f52); }
+  </style>
+</head>
+
+<body>
+  <div>
+    <main class="flex-1 p-8">
+
+  <!-- PAGE HEADER -->
+  <div class="flex items-center justify-between mb-6">
+    <h2 class="text-2xl font-bold">Admin Dashboard</h2>
+    <a href="./Login.html">Sign out</a>
+  </div>
+
+  <!-- ADMIN PROFILE -->
+  <section class="card p-6 rounded-lg mb-10">
+    <h3 class="text-xl font-bold mb-4">Admin Profile</h3>
+
+    <div class="flex items-center gap-4">
+      <img alt="gd" src="https://via.placeholder.com/90" class="w-20 h-20 rounded-full border border-gray-700">
+      <div>
+        <div class="text-lg font-semibold">Admin</div>
+        <div class="text-sm text-gray-400">admin@elitedrive.com</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COURSE STATS -->
+  <section class="grid grid-cols-3 gap-4 mb-10">
+    <div class="card p-4 rounded-lg">
+      <div class="text-sm">Total Courses</div>
+      <div class="text-2xl font-bold">3</div>
+    </div>
+    <div class="card p-4 rounded-lg">
+      <div class="text-sm">Total Users</div>
+      <div class="text-2xl font-bold">12</div>
+    </div>
+    <div class="card p-4 rounded-lg">
+      <div class="text-sm">Total Revenue</div>
+      <div class="text-2xl font-bold">$850</div>
+    </div>
+  </section>
+
+  <!-- USERS & PROGRESS -->
+  <section class="card p-6 rounded-lg mb-10">
+    <h3 class="text-xl font-bold mb-4">Users & Progress</h3>
+
+    <table class="w-full text-left">
+      <thead>
+        <tr class="text-xs text-gray-400">
+          <th class="py-2">Name</th>
+          <th>Email</th>
+          <th>Course</th>
+          <th>Progress</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="border-t border-gray-800">
+          <td class="py-3">John Doe</td>
+          <td>john@example.com</td>
+          <td>Beginner Course</td>
+          <td>70%</td>
+          <td class="text-green-400">Active</td>
+        </tr>
+
+        <tr class="border-t border-gray-800">
+          <td class="py-3">Mary Jane</td>
+          <td>mary@example.com</td>
+          <td>Refresher Course</td>
+          <td>45%</td>
+          <td class="text-yellow-400">In Progress</td>
+        </tr>
+
+        <tr class="border-t border-gray-800">
+          <td class="py-3">Kevin Alex</td>
+          <td>kevin@example.com</td>
+          <td>Test Preparation</td>
+          <td>100%</td>
+          <td class="text-blue-400">Completed</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </section>
+
+  <!-- COURSES LIST -->
+  <section class="card p-6 rounded-lg mb-10">
+    <h3 class="text-xl font-bold mb-4">Courses Overview</h3>
+
+    <table class="w-full text-left">
+      <thead>
+        <tr class="text-xs text-gray-400">
+          <th class="py-2">Course</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th>Enrolled</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="border-t border-gray-800">
+          <td class="py-3">Beginner Course</td>
+          <td>12 lessons • Manual car</td>
+          <td>$120</td>
+          <td>5 students</td>
+        </tr>
+
+        <tr class="border-t border-gray-800">
+          <td class="py-3">Refresher Course</td>
+          <td>6 lessons • Flexible schedule</td>
+          <td>$80</td>
+          <td>4 students</td>
+        </tr>
+
+        <tr class="border-t border-gray-800">
+          <td class="py-3">Test Preparation</td>
+          <td>Mock tests & driving exam tips</td>
+          <td>$70</td>
+          <td>3 students</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+</main>
+
+  </div>
+</body>
+</html>
