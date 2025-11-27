@@ -49,7 +49,7 @@
         <span class="text-xl font-semibold tracking-tight">SánchezAutoescuela</span>
       </div>
     <nav class="hidden md:flex items-center gap-6 text-sm font-semibold">
-      <a title="tef" href="{% url 'home' %}" class="text-green-300 transition">Inicio</a>
+      <a title="tef" href="{% url 'home' %}" class="hover:text-green-300 transition">Inicio</a>
       <a title="tef" href="{% url 'services' %}" class="hover:text-green-300 transition">Servicios</a>
       <a title="tef" href="{% url 'blog' %}" class="hover:text-green-300 transition">Blog</a>
       <a title="tef" href="{% url 'faq' %}" class="hover:text-green-300 transition">FAQ</a>
@@ -82,42 +82,44 @@
     </header>
   <!-- About Section -->
        <section id="about" class="md:py-20 py-10  container mx-auto px-6 md:px-20 fade-in">
-      <div class="md:grid grid-cols-2 gap-12 ">
-        <h2 class="text-4xl font-bold text-green-200 mb-4"> Sobre Nosotros  Autoescuela Sánchez</h2>
-        <img src="{% static 'Images/vehicle.jpg' %}" 
+      <div class="text-center w-full space-y-4">    
+        <h2 class="text-4xl font-bold text-green-200 mb-4 "> Sobre Nosotros  Autoescuela Sánchez</h2>    
+       <div class="md:grid grid-cols-2 gap-12 text-left mt-4">
+         <img src="{% static 'Images/vehicle.jpg' %}" 
              alt="Driving lessons" class="rounded-2xl shadow-lg fade-in delay-1">
         <div class="fade-in delay-2">
-          <p class="text-gray-100 leading-relaxed mb-4">
+          <p class="text-gray-100 leading-relaxed mb-4 text-start">
             Autoescuela Sánchez es una de las autoescuelas modernas más consolidadas y de mayor confianza, ofreciendo una formación premium para alumnos de todos los niveles. Nuestros instructores titulados imparten una enseñanza tranquila, profesional y orientada a resultados, diseñada para que obtengas el carnet rápido y con total seguridad.
           </p>
+       </div>
         </div>
       </div>
     </section>
 
     <section id="about" class="md:py-20 py-10  container mx-auto px-6 md:px-20 fade-in">
       <div class="md:grid grid-cols-2 gap-12 ">
-        <img src="{% static 'Images/sanchezautoculamap.jpg' %}" 
-             alt="Driving lessons" class="rounded-2xl shadow-lg fade-in delay-1">
         <div class="fade-in delay-2">
           <p class="text-gray-400 leading-relaxed">
-
-                ¡Bienvenidos a Autoescuela Sánchez!  
-                Estamos en el corazón de San Blas-Canillejas, en una ubicación inmejorable:
-
-                📍 **C. de Josefa Valcárcel, 28, 28027 Madrid**  
-                Justo al lado del Parque de los Tres Olivos, a dos minutos de la Plaza de la Solidaridad y con fácil acceso desde la N-502a y la M-40.
-
-                Aquí encontrarás un equipo cercano y profesional, clases prácticas por las calles que realmente vas a usar a diario y la tranquilidad de aprender en un barrio que conoces.  
-                Porque sacarte el carnet no tiene por qué ser complicado… ¡tiene que ser cerca de casa!
-
-                🚗 Te esperamos en Josefa Valcárcel 28. ¡Tu carnet empieza aquí!  
-
-                Autoescuela Sánchez – Tu autoescuela de confianza en San Blas.
+            
+            ¡Bienvenidos a Autoescuela Sánchez!  
+            Estamos en el corazón de San Blas-Canillejas, en una ubicación inmejorable:
+            
+            📍 **C. de Josefa Valcárcel, 28, 28027 Madrid**  
+            Justo al lado del Parque de los Tres Olivos, a dos minutos de la Plaza de la Solidaridad y con fácil acceso desde la N-502a y la M-40.
+            
+            Aquí encontrarás un equipo cercano y profesional, clases prácticas por las calles que realmente vas a usar a diario y la tranquilidad de aprender en un barrio que conoces.  
+            Porque sacarte el carnet no tiene por qué ser complicado… ¡tiene que ser cerca de casa!
+            
+            🚗 Te esperamos en Josefa Valcárcel 28. ¡Tu carnet empieza aquí!  
+            
+            Autoescuela Sánchez – Tu autoescuela de confianza en San Blas.
           </p>
           <a href="https://www.google.co.uk/maps/place/Autoescuela+S%C3%A1nchez/@39.9651144,-4.833295,17z/data=!3m1!4b1!4m6!3m5!1s0xd401bf52443e289:0x9343085ddaed3058!8m2!3d39.9651144!4d-4.8307201!16s%2Fg%2F11clywf0w6?entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D">
             <button class="w-full bg-green-500 hover:bg-green-600 text-black font-bold py-3 rounded-lg transition">Ver en el mapa</button>
           </a>
         </div>
+        <img src="{% static 'Images/sanchezautoculamap.jpg' %}" 
+             alt="Driving lessons" class="rounded-2xl shadow-lg fade-in delay-1">
       </div>
     </section>
 <script>
